@@ -1,27 +1,77 @@
-DBProject
-I've used Oracle 19c for the database as it was the requirement of our project. You'll need to install Oracle 19c on your machine before you can run it. Dont't forget to modify the DATABASES dictionary (username, password etc) declared in the settings.py file accordingly. The SQL code to create the schema and other database stuff is in extras>inventory.sql Make sure to run the SQL code from the inventory.sql file before you run the project.
-Setup:
+# E-commerce Website Project
+
+This project is a Django-based e-commerce website that utilizes Oracle 19c as the database backend. Follow the instructions below to set up the project on your local machine.
+
+## Prerequisites
+
+- Oracle Database 19c
+- Python 3.x
+- Django
+
+## Setup Instructions
+
+### 1. Install Oracle Database 19c
+
+Before running the project, ensure you have Oracle Database 19c installed on your machine. Follow the official Oracle installation guide for your specific operating system.
+
+### 2. Clone the Project
+
+Clone the repository to your local machine using the following command:
 git clone https://github.com/talib-raath/ecommerce-Website
-Install Python: Django is a Python web framework, so you need to have Python installed on your system. You can download and install Python from the official Python website. Make sure to install Python 3.x as Django is compatible with Python 3.
 
-Install Django: Once you have Python installed, you can install Django using pip, Python's package manager. Open a terminal or command prompt and run the following command:
+
+### 3. Install Python
+
+The project is developed using Django, which requires Python. Download and install Python 3.x from the [official Python website](https://www.python.org/).
+
+### 4. Install Django
+
+With Python installed, use pip to install Django:
+
 pip install django
-Create a Django Project: After installing Django, you can create a new Django project using the django-admin command-line tool. Navigate to the directory where you want to create your project and run:
-django-admin startproject projectname
-django-admin startproject projectname
-eplace projectname with the name of your project.
 
-Create a Django App: Inside your Django project, you can create one or more apps. Apps are components of your project that handle specific functionality. Navigate into your project directory and run:
-python manage.py startapp appname
-Replace appname with the name of your app.
 
-Configure Settings: Django settings are located in the settings.py file within your project directory. Configure database settings, static files, templates, middleware, etc., as needed for your project.
+### 5. Configure the Database
 
-Run Migrations: Django uses migrations to manage database schema changes. Run the following command to apply migrations and create database tables:
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/be7f7d91-073b-4135-bf93-462672a23210)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/0be5b8ce-a588-425f-b31f-21f46569b187)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/507c5441-2a1f-44b2-bbbf-fa7948ccf7c5)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/5e7883d4-82db-47cb-9923-e760e02d2179)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/01698324-6d3c-41aa-888d-d6cdeb359c89)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/d28b4a80-3cf9-499d-b17c-79413d941e6c)
-![image](https://github.com/runtime-error786/Ecommerce-data_base/assets/123109871/e02ad311-981c-4fd8-a00a-3c9f06df732d)
+Navigate to the project's `settings.py` file and modify the `DATABASES` dictionary with your Oracle database connection details (username, password, etc.).
+
+### 6. Apply Database Schema
+
+Run the SQL code provided in `extras>inventory.sql` to create the necessary database schema. This step requires access to your Oracle 19c database.
+
+### 7. Run Migrations
+
+Django uses migrations to manage database schema changes. Apply migrations using the following command:
+
+python manage.py migrate
+
+
+### 8. Create a Django Superuser
+
+Create a superuser for the Django admin panel:
+
+
+Follow the prompts to set up the superuser account.
+
+### 9. Run the Server
+
+Start the Django development server:
+
+python manage.py runserver
+
+
+Navigate to `http://127.0.0.1:8000/` in your web browser to view the project.
+
+## Project Screenshots
+
+Screenshots of the project can be found in the repository's `screenshots` folder or through the provided links in the project description.
+
+For more detailed instructions, refer to the individual README files within each project component directory.
+
+## Contributions
+
+Contributions to the project are welcome. Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
