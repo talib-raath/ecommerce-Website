@@ -63,14 +63,17 @@ python manage.py runserver
 Navigate to `http://127.0.0.1:8000/` in your web browser to view the project.
 
 ## Project Screenshots
-
-Screenshots of the project can be found in the repository's `screenshots` folder or through the provided links in the project description.
-
-For more detailed instructions, refer to the individual README files within each project component directory.
+![Screenshot of Feature X](/screenshots/ss2.jpeg "Feature X Preview")
+![Screenshot of Feature X](/screenshots/ss6.jpeg "Feature X Preview")
+![Screenshot of Feature X](/screenshots/ss1.jpeg "Feature X Preview")
+![Screenshot of Feature X](/screenshots/ss3.jpeg "Feature X Preview")
+![Screenshot of Feature X](/screenshots/ss4.jpeg "Feature X Preview")
+![Screenshot of Feature X](/screenshots/ss5.jpeg "Feature X Preview")
 
 ## Contributions
 
 Contributions to the project are welcome. Please fork the repository and submit a pull request with your changes.
+
 
 ## License
 
